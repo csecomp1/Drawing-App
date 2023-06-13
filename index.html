@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- <div class="container">
+    <section class="tool-board">
+        <label class="title">Shapes</label>
+        <ul class="options">
+            <li class="option">
+                <img src="rectangle.svg">
+                <span>Rectangle</span>
+            </li>
+            <li class="option">
+                <img src="triangle.svg">
+                <span>Triangle</span>
+            </li>
+            <li class="option">
+                <img src="circle.svg">
+                <span>Circle</span>
+            </li>
+            <li class="option">
+                <input type="checkbox" id="fill-color">
+                <label for="fill-color">Fill color</label>
+            </li>
+        </ul>
+        <lable for="title">options</lable>
+        <ul class="options">
+            <li class="option" alt="">
+                <img src="brush.svg">
+                <span>Brush</span>
+            </li>
+            <li class="option">
+                <img src="eraser.svg">
+                <span>Eraser</span>
+            </li>
+            <li class="option">
+                <input type="range" id="size-slider">
+                
+            </li>
+          
+        </ul>
+        <div class="row">
+            <label class="title">Color</label>
+            <ul class="options">
+                <li class="option">
+                    
+                </li>
+                <li class="option">
+                    
+                </li>
+                <li class="option">
+                    
+                </li>
+                <li class="option">
+                    
+                </li>
+                <li class="option">
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <button class="clear-canvas">Clear Canvas</button>
+            <button class="save-img">Save Image</button>
+        </div>
+       
+    </section>
+    <section class="drawing-board"></section>
+</div-->
+
+<div class="class-field">
+    <canvas id="canvas"></canvas>
+    <div class="tools">
+        
+        <button onClick="save()" type="button" id="save-img" class="button">Save</button>
+        <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+        <div onClick="change_color(this)" class="color-field" style="background:red;"></div>
+        <div onClick="change_color(this)"class="color-field" style="background:blue;"></div>
+        <div onClick="change_color(this)"class="color-field" style="background:green;"></div>
+        <div onClick="change_color(this)" class="color-field" style="background:yellow;"></div>
+        <input onInput="draw_color=this.value" type="color" class="color-picker">
+        <input onInput="draw_width=this.value" type="range" min="1" max="100" class="pen-range">
+   <a download="" ></a>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
